@@ -28,16 +28,27 @@
       href="/assets/favicons/favicon-16x16.png"
     />
     <link rel="manifest" href="/assets/favicons/site.webmanifest" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/assets/css/style.css" />
   </head>
   <body>
     <header class="header" id="home">
       <div class="container">
         <nav class="navbar">
           <div class="logo">
-            <a href="/">Digital Agency</a>
+            <a href="/">DA</a>
           </div>
+          <button class="btn btn-primary" id="menu-toggle">
+              <span class="fa-solid fa-bars"></span>
+          </button>
           <menu class="main-navbar">
-            <li><a href="">Home</a></li>
+            <li class="active"><a href="">Home</a></li>
             <li><a href="">About</a></li>
             <li><a href="">Work</a></li>
             <li><a href="">Process</a></li>
@@ -47,13 +58,15 @@
           </menu>
         </nav>
         <section class="hero-section">
-          <h1>we design and develop</h1>
-          <p>
-            We are new design studio based in USA. We have over 20 years of
-            combined experience, and know a thing or two about designing
-            websites and mobile apps.
-          </p>
-          <a href="" class="btn btn-primary">contact us</a>
+          <div class="hero-content">
+            <h1>We Design and Develop</h1>
+            <p>
+              We are new design studio based in USA. We have over 20 years of
+              combined experience, and know a thing or two about designing
+              websites and mobile apps.
+            </p>
+            <a href="" class="btn btn-primary">contact us</a>
+          </div>
         </section>
       </div>
     </header>
@@ -70,53 +83,53 @@
             </p>
             <img src="/assets/images/signature.png" alt="A signature image" />
           </section>
-          <div class="skills-content">
-            <section class="skills">
-              <h2 class="section-heading">professional skills</h2>
-              <div class="skill-sets">
-                <div class="skill">
-                  <h4 class="skill__name">ui/us design</h4>
-                  <span class="skill__meter"></span>
-                </div>
-                <div class="skill">
-                  <h4 class="skill__name">web development</h4>
-                  <span class="skill__meter"></span>
-                </div>
-                <div class="skill">
-                  <h4 class="skill__name">marketing</h4>
-                  <span class="skill__meter"></span>
-                </div>
+        </div>
+        <div class="skills-content">
+          <section class="skills">
+            <h2 class="section-heading">professional skills</h2>
+            <div class="skills-set">
+              <div class="skill">
+                <h4 class="skill__name">ui/ux design <span>75%</span></h4>
+                <span class="skill__meter"></span>
               </div>
-            </section>
-            <div class="skills-img"></div>
-          </div>
+              <div class="skill">
+                <h4 class="skill__name">web development <span>90%</span></h4>
+                <span class="skill__meter"></span>
+              </div>
+              <div class="skill">
+                <h4 class="skill__name">marketing <span>65%</span></h4>
+                <span class="skill__meter"></span>
+              </div>
+            </div>
+          </section>
+          <div class="skills-img"></div>
         </div>
         <div class="stats-content">
           <div class="container">
             <div class="stats">
               <div class="stat">
-                <span class="stat-icon"></span>
+                <span class="stat-icon fa-solid fa-briefcase"></span>
                 <div class="stat-meta">
                   <span class="stat-record">548</span>
                   <h4 class="stat-name">projects completed</h4>
                 </div>
               </div>
               <div class="stat">
-                <span class="stat-icon"></span>
+                <span class="stat-icon fa-regular fa-clock"></span>
                 <div class="stat-meta">
                   <span class="stat-record">1465</span>
                   <h4 class="stat-name">working hours</h4>
                 </div>
               </div>
               <div class="stat">
-                <span class="stat-icon"></span>
+                <span class="stat-icon fa-regular fa-star"></span>
                 <div class="stat-meta">
                   <span class="stat-record">612</span>
                   <h4 class="stat-name">positive feedbacks</h4>
                 </div>
               </div>
               <div class="stat">
-                <span class="stat-icon"></span>
+                <span class="stat-icon fa-regular fa-heart"></span>
                 <div class="stat-meta">
                   <span class="stat-record">735</span>
                   <h4 class="stat-name">happy clients</h4>
@@ -131,35 +144,67 @@
         <div class="works">
           <div class="work">
             <img src="/assets/images/shampoo.png" alt="A work picture" />
-            <div class="work-hover"><span class="work-icon"></span></div>
+            <div class="work-hover">
+              <a href="" class="btn-btn-icon"
+                ><span class="work-icon fa-regular fa-eye"></span
+              ></a>
+            </div>
           </div>
           <div class="work">
             <img src="/assets/images/shampoo.png" alt="A work picture" />
-            <div class="work-hover"><span class="work-icon"></span></div>
+            <div class="work-hover">
+              <a href="" class="btn-btn-icon"
+                ><span class="work-icon fa-regular fa-eye"></span
+              ></a>
+            </div>
           </div>
           <div class="work">
             <img src="/assets/images/shampoo.png" alt="A work picture" />
-            <div class="work-hover"><span class="work-icon"></span></div>
+            <div class="work-hover">
+              <a href="" class="btn-btn-icon"
+                ><span class="work-icon fa-regular fa-eye"></span
+              ></a>
+            </div>
           </div>
           <div class="work">
             <img src="/assets/images/shampoo.png" alt="A work picture" />
-            <div class="work-hover"><span class="work-icon"></span></div>
+            <div class="work-hover">
+              <a href="" class="btn-btn-icon"
+                ><span class="work-icon fa-regular fa-eye"></span
+              ></a>
+            </div>
           </div>
           <div class="work">
             <img src="/assets/images/shampoo.png" alt="A work picture" />
-            <div class="work-hover"><span class="work-icon"></span></div>
+            <div class="work-hover">
+              <a href="" class="btn-btn-icon"
+                ><span class="work-icon fa-regular fa-eye"></span
+              ></a>
+            </div>
           </div>
           <div class="work">
             <img src="/assets/images/shampoo.png" alt="A work picture" />
-            <div class="work-hover"><span class="work-icon"></span></div>
+            <div class="work-hover">
+              <a href="" class="btn-btn-icon"
+                ><span class="work-icon fa-regular fa-eye"></span
+              ></a>
+            </div>
           </div>
           <div class="work">
             <img src="/assets/images/shampoo.png" alt="A work picture" />
-            <div class="work-hover"><span class="work-icon"></span></div>
+            <div class="work-hover">
+              <a href="" class="btn-btn-icon"
+                ><span class="work-icon fa-regular fa-eye"></span
+              ></a>
+            </div>
           </div>
           <div class="work">
             <img src="/assets/images/shampoo.png" alt="A work picture" />
-            <div class="work-hover"><span class="work-icon"></span></div>
+            <div class="work-hover">
+              <a href="" class="btn-btn-icon"
+                ><span class="work-icon fa-regular fa-eye"></span
+              ></a>
+            </div>
           </div>
         </div>
         <div class="work-more">
@@ -168,91 +213,99 @@
       </section>
       <section class="section section-process" id="process">
         <h2 class="section-heading">our work process</h2>
-        <p class="section-brief">
-          Was years it seasons was there form he in in them together over that,
-          third sixth gathered female creeping bearing behold years.
-        </p>
-        <video controls>
-          <source
-            src="/assets/media/47ae6ed30d3b498673c9c66c5fe70c0c.mp4"
-            type="video/mp4"
-          />
-          Video tag is not supported in your browser
-        </video>
+        <div class="container">
+          <p class="section-brief">
+            Was years it seasons was there form he in in them together over
+            that, third sixth gathered female creeping bearing behold years.
+          </p>
+          <video controls>
+            <source
+              src="/assets/media/47ae6ed30d3b498673c9c66c5fe70c0c.mp4"
+              type="video/mp4"
+            />
+            Video tag is not supported in your browser
+          </video>
+        </div>
       </section>
       <section class="section section-services">
         <h2 class="section-heading sr-only">Services</h2>
         <div class="container">
           <div class="services">
             <div class="service">
-              <span class="service-icon"></span>
+              <span class="service-icon fa-regular fa-gem"></span>
               <h4 class="service-name">ui / ux design</h4>
               <p class="service-brief">
-                be set fourth land god darkness make it wherein own
+                Be set fourth land god darkness make it wherein own
               </p>
             </div>
             <div class="service">
-              <span class="service-icon"></span>
+              <span class="service-icon fa-regular fa-code"></span>
               <h4 class="service-name">web development</h4>
               <p class="service-brief">
-                a she'd them bring void moving third she'd kind fill
+                A she'd them bring void moving third she'd kind fill
               </p>
             </div>
             <div class="service">
-              <span class="service-icon"></span>
+              <span
+                class="service-icon fa-regular fa-mobile-screen-button"
+              ></span>
               <h4 class="service-name">app / mobile</h4>
               <p class="service-brief">
-                dominion man second spirit he, earth they're creeping
+                Dominion man second spirit he, earth they're creeping
               </p>
             </div>
             <div class="service">
-              <span class="service-icon"></span>
+              <span class="service-icon fa-solid fa-gamepad"></span>
               <h4 class="service-name">game design</h4>
               <p class="service-brief">
-                morning his saying moveth it multiply appear life be
+                Morning his saying moveth it multiply appear life be
               </p>
             </div>
             <div class="service">
-              <span class="service-icon"></span>
+              <span class="service-icon fa-solid fa-rocket"></span>
               <h4 class="service-name">seo / marketing</h4>
               <p class="service-brief">
-                give wont' after land fill creeping meat you, may
+                Give wont' after land fill creeping meat you, may
               </p>
             </div>
             <div class="service">
-              <span class="service-icon"></span>
+              <span class="service-icon fa-solid fa-camera"></span>
               <h4 class="service-name">photography</h4>
               <p class="service-brief">
-                creeepeth one seas cattle grass give moving saw give
+                Creeepeth one seas cattle grass give moving saw give
               </p>
             </div>
             <div class="service">
-              <span class="service-icon"></span>
+              <span class="service-icon fa-solid fa-compass-drafting"></span>
               <h4 class="service-name">graphic design</h4>
               <p class="service-brief">
-                open, great whales air rule for, fourth life whales
+                Open, great whales air rule for, fourth life whales
               </p>
             </div>
             <div class="service">
-              <span class="service-icon"></span>
+              <span class="service-icon fa-solid fa-paintbrush"></span>
               <h4 class="service-name">ilustrations</h4>
               <p class="service-brief">
-                whale likeness hath, man kind for them air two won't
+                Whale likeness hath, man kind for them air two won't
               </p>
             </div>
           </div>
         </div>
       </section>
-      <section class="section section-testimonial" id="testimonial">
-        <h2 class="section-heading sr-only">Testimonials</h2>
-        <div class="container testmonials">
-          <blockquote class="testimonial">
-            "Outstanding job and exceeded all expectations. It was a pleasure to
-            work with them on a sizalbe first project and am looking forward to
-            start the next on asap."
-            <cite class="testimonial-author">michael hopkins</cite>
-          </blockquote>
-        </div>
+      <div class="section section-testimonial" id="testimonial">
+        <section class="testimonial-content">
+          <h2 class="section-heading sr-only">Testimonials</h2>
+          <div class="container">
+            <div class="testmonials">
+              <blockquote class="testimonial">
+                "Outstanding job and exceeded all expectations. It was a
+                pleasure to work with them on a sizalbe first project and am
+                looking forward to start the next on asap."
+                <cite class="testimonial-author">michael hopkins</cite>
+              </blockquote>
+            </div>
+          </div>
+        </section>
         <div class="sponsors container">
           <svg
             class="sponsor"
@@ -345,7 +398,7 @@
             <use style="opacity: 0.5" href="#img1" x="0" y="0" />
           </svg>
         </div>
-      </section>
+      </div>
     </main>
     <footer class="footer" id="contact">
       <section class="section section-contact">
@@ -386,12 +439,15 @@
             />
           </div>
           <div class="form-group">
-            <label for="comment" class="form-label">Enter Comment</label>
+            <label for="comment" class="form-label sr-only"
+              >Enter Comment</label
+            >
             <textarea
+              class="form-input"
               name="comment"
               id="comment"
               cols="30"
-              rows="3"
+              rows="7"
               placeholder="Your Comment"
             ></textarea>
           </div>
@@ -402,45 +458,77 @@
       </section>
       <div class="bottom-footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-col span-5">
-                    <h3 class="company-name">Piroll Design, Inc.</h3>
-                    <p class="copyright">
-                      &copy; 2022 Piroll. All rights reserved <br />
-                      Designed by robirurk.
-                    </p>
-                </div>
-                <div class="footer-col span-3">
-                    <ul class="footer-list">
-                        <li class="footer-item"><a href="mailto:hello@pirolltheme.com" class="footer-link">hello@pirolltheme.com</a></li>
-                        <li class="footer-item"><a href="tel:+44 987 065 908" class="footer-link">+44 987 065 908</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <ul class="footer-list">
-                        <li class="footer-item"><a href="" class="footer-link">Projects</a></li>
-                        <li class="footer-item"><a href="" class="footer-link">About</a></li>
-                        <li class="footer-item"><a href="" class="footer-link">Services</a></li>
-                        <li class="footer-item"><a href="" class="footer-link">Career</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <ul class="footer-list">
-                        <li class="footer-item"><a href="" class="footer-link">News</a></li>
-                        <li class="footer-item"><a href="" class="footer-link">Events</a></li>
-                        <li class="footer-item"><a href="" class="footer-link">section-contact</a></li>
-                        <li class="footer-item"><a href="" class="footer-link">Legals</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <ul class="footer-list">
-                        <li class="footer-item"><a href="" class="footer-link">Facebook</a></li>
-                        <li class="footer-item"><a href="" class="footer-link">Twitter</a></li>
-                        <li class="footer-item"><a href="" class="footer-link">Instagram</a></li>
-                        <li class="footer-item"><a href="" class="footer-link">Dribble</a></li>
-                    </ul>
-                </div>
+          <div class="footer-content">
+            <div class="footer-col span-5">
+              <h3 class="company-name">Piroll Design, Inc.</h3>
+              <p class="copyright">
+                &copy; 2022 Piroll. All rights reserved <br />
+                Designed by robirurk.
+              </p>
             </div>
+            <div class="footer-col span-3">
+              <ul class="footer-list">
+                <li class="footer-item">
+                  <a href="mailto:hello@pirolltheme.com" class="footer-link"
+                    >hello@pirolltheme.com</a
+                  >
+                </li>
+                <li class="footer-item">
+                  <a href="tel:+44 987 065 908" class="footer-link"
+                    >+44 987 065 908</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <ul class="footer-list">
+                <li class="footer-item">
+                  <a href="" class="footer-link">Projects</a>
+                </li>
+                <li class="footer-item">
+                  <a href="" class="footer-link">About</a>
+                </li>
+                <li class="footer-item">
+                  <a href="" class="footer-link">Services</a>
+                </li>
+                <li class="footer-item">
+                  <a href="" class="footer-link">Career</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-col span-2">
+              <ul class="footer-list">
+                <li class="footer-item">
+                  <a href="" class="footer-link">News</a>
+                </li>
+                <li class="footer-item">
+                  <a href="" class="footer-link">Events</a>
+                </li>
+                <li class="footer-item">
+                  <a href="" class="footer-link">Contact</a>
+                </li>
+                <li class="footer-item">
+                  <a href="" class="footer-link">Legals</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <ul class="footer-list">
+                <li class="footer-item">
+                  <a href="" class="footer-link">Facebook</a>
+                </li>
+                <li class="footer-item">
+                  <a href="" class="footer-link">Twitter</a>
+                </li>
+                <li class="footer-item">
+                  <a href="" class="footer-link">Instagram</a>
+                </li>
+                <li class="footer-item">
+                  <a href="" class="footer-link">Dribble</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
