@@ -99,6 +99,7 @@ a:focus {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 0;
+  position: relative;
 }
 .main-navbar {
   display: flex;
@@ -319,6 +320,7 @@ a:focus {
 .service-icon {
     font-size: 3rem;
     margin-bottom: 0.5em;
+    color: #787878;
 }
 .service-name {
     font-size: 0.75rem;
@@ -431,6 +433,22 @@ a:focus {
     }
     .main-navbar {
         display: none;
+    }
+    .main-navbar.open {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        width: 100%;
+        gap: 0;
+        background-color: #ffffff;
+    }
+    .main-navbar > li > a {
+        display: block;
+        width: 100%;
+        text-align: center;
     }
     .hero-content {
         flex: 1 1 auto;
